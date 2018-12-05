@@ -1,11 +1,11 @@
-# Careplanning
+# Clinincal-Content-Discovery
 
-Careplanning SOA service
+Clinincal Content-Discovery
 
 ## Requirements
 
 * [Docker](https://www.docker.com)
-* [NodeJS](https://www.nodejs.org) >= v6
+* [NodeJS](https://www.nodejs.org) latest(LTS)
 * [Yarn](https://yarnpkg.com/lang/en/)
 
 ## Set-up
@@ -27,7 +27,7 @@ This project uses curl tool to transfer data from or to a server.
 
 First install curl.exe
 
-You'll want to make curl.exe available anywhere from the command line. To do this, pick ahc-careplanning folder on local repo and add it to the system path as outlined below:
+You'll want to make curl.exe available anywhere from the command line. To do this, pick -newRepository folder on local repo and add it to the system path as outlined below:
 
 Click the Windows start menu, start typing 'environment'
 
@@ -120,16 +120,16 @@ Example: `Docker-Qa-Remove 0.1.1-dev-aa1b5d-102`
 
 ## Seed data
 
-Data is automatically seeded when care planning is run in a development environment
+Data is automatically seeded when Clinincal-Content-Discovery is run in a development environment
 or when the containers are started using `Docker-Qa-Up` powershell command.
 
 ### In development environment
 
-Data is only seeded once. To clear the mongo database in order for the data to be reseeded, run `docker-compose down -v`. This will remove all volumes for the care planning containers.
+Data is only seeded once. To clear the mongo database in order for the data to be reseeded, run `docker-compose down -v`. This will remove all volumes for the Clinincal-Content-Discovery containers.
 
 ### In QA environment
 
-Data is only seeded once. Subsequent calls to `Docker-Qa-Up` and `Docker-Qa-Down` will keep the data. `Docker-Qa-Remove` will keep the data too. To clear the mongo database in order for the data to be reseeded, run `Docker-Qa-Down -RemoveData`. This will remove all volumes for the care planning containers.
+Data is only seeded once. Subsequent calls to `Docker-Qa-Up` and `Docker-Qa-Down` will keep the data. `Docker-Qa-Remove` will keep the data too. To clear the mongo database in order for the data to be reseeded, run `Docker-Qa-Down -RemoveData`. This will remove all volumes for the Clinincal-Content-Discovery containers.
 
 ## E2E tests
 
